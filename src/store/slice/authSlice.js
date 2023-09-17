@@ -74,7 +74,7 @@ export const authSlice = createSlice({
       state.isLogin = true;
       state.data = action.payload.data;
       state.message = action.payload.message;
-      sessionSet('token', action.payload.data.token, 1)
+      sessionSet('token', action.payload.data.token, 720)
     });
   },
 });
